@@ -36,6 +36,7 @@ class Executable:
         trademarks: str | None = None,
         manifest: str | Path | None = None,
         uac_admin: bool = False,
+        uac_uiaccess: bool = False,
     ):
         self.main_script = script
         self.init_script = init_script
@@ -48,6 +49,7 @@ class Executable:
         self.trademarks = trademarks
         self.manifest = manifest
         self.uac_admin = uac_admin
+        self.uac_uiaccess = uac_uiaccess
 
     def __repr__(self):
         return f"<Executable script={self.main_script}>"
